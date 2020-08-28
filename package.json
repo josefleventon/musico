@@ -1,11 +1,11 @@
 {
   "name": "musico",
   "version": "1.0.1",
-  "description": "A Discord music bot like no other! Generates synthetic soundtracks through the use of musical arguments. Uses SynthJS, Scribbletune and the Filestack API to seamlessly return finished WAV-format files in a matter of seconds!",
+  "description": "A Discord music bot like no other! Generates synthetic soundtracks through the use of musical arguments. Uses SynthJS, Scribbletune and the Filestack API to seamlessly return finished WAV-format files in a matter of seconds.",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index && exit 1",
-    "dev": "nodemon index",
+    "test": "nodemon -e js,json,html index && exit 1",
+    "dev": "nodemon -e js,json,html index",
     "start": "node index"
   },
   "repository": {

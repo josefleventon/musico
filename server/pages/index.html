@@ -9,7 +9,95 @@
     />
     <title>Musico</title>
   </head>
-  <body>
-    <h1>Musico</h1>
+  <body class="min-w-screen min-h-screen bg-gray-200">
+    <nav
+      class="w-screen bg-gray-400 flex flex-row justify-between align-center border-b-2 border-gray-300 block sm:mb-12 md:fixed"
+    >
+      <h1 class="text-red-700 text-4xl font-bold py-2 px-2">🎸 Musico</h1>
+      <div class="flex flex-row pl-4">
+        <div
+          class="flex justify-center align-center items-center bg-gray-300 hover:bg-gray-200 cursor-pointer border-gray-400"
+        >
+          <a
+            href="https://github.com/josefleventon/musico"
+            class="text-red-800 hover:text-red-600 text-lg font-light text-center px-4"
+            >GitHub</a
+          >
+        </div>
+        <div
+          class="flex justify-center align-center items-center bg-gray-300 hover:bg-gray-200 cursor-pointer border-r-2 border-gray-400"
+        >
+          <a
+            href="https://github.com/josefleventon/musico/issues"
+            class="text-red-800 hover:text-red-600 text-lg font-light text-center px-4"
+            >Issues</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div
+      class="flex flex-col w-screen h-screen justify-center align-center items-center px-2 md:px-64"
+    >
+      <h1 class="text-red-600 text-6xl font-black mb-0 leading-none">Musico</h1>
+      <p class="text-gray-600 text-center mt-0 leading-none">
+        A Discord music bot like no other!
+      </p>
+      <div class="flex flex-col md:flex-row pt-6">
+        <div class="flex flex-col px-2">
+          <p class="text-gray-600 text-sm font-extrabold">DO THIS:</p>
+          <code class="py-4 px-4 bg-gray-400 rounded"
+            >m!notes 4 x__xx__xx__xxxx_xxxxx__xx_x_xxxx 2 c4 d4 c4 d4 c4 a#3 g#3
+            a#3 g3 c5 d5 d#5 d5 d#5 d5 c5 a#4 a#4 a4 g4 f4</code
+          >
+        </div>
+        <div class="flex flex-col px-2">
+          <p class="text-gray-600 text-sm font-extrabold">GET THIS:</p>
+          <iframe
+            width="100%"
+            height="150"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/883565983&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          ></iframe>
+          <div
+            style="
+              font-size: 10px;
+              color: #cccccc;
+              line-break: anywhere;
+              word-break: normal;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+                Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+              font-weight: 100;
+            "
+          >
+            <a
+              href="https://soundcloud.com/josefleventon"
+              title="JosefLeventon"
+              target="_blank"
+              style="color: #cccccc; text-decoration: none"
+              >JosefLeventon</a
+            >
+            ·
+            <a
+              href="https://soundcloud.com/josefleventon/musico-demo-rachmaninov-piano-concerto-no2"
+              title="Musico Demo - Rachmaninov - Piano Concerto no.2"
+              target="_blank"
+              style="color: #cccccc; text-decoration: none"
+              >Musico Demo - Rachmaninov - Piano Concerto no.2</a
+            >
+          </div>
+        </div>
+      </div>
+      <a
+        href="/invite"
+        class="rounded-lg px-4 md:px-5 xl:px-4 py-3 md:py-4 xl:py-3 bg-red-500 hover:bg-red-600 md:text-lg xl:text-base text-white font-semibold leading-tight shadow-md mt-6"
+      >
+        Invite Musico
+      </a>
+    </div>
   </body>
 </html>
