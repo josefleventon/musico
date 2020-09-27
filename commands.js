@@ -56,6 +56,8 @@ exports.chords = (args, message, filestackClient) => {
     .midiToWav(fs.readFileSync(`${message.author.id}.mid`))
     .toBuffer(); // Create a WAV file buffer
 
+  message.channel.send("Generating clip..."); // Let the user know the bot is working on it
+
   // Upload the buffer to Filestack and send it to chat
   filestackClient.upload(wavBuffer).then(async (res) => {
     await message.channel.send("Here's your result:", {
@@ -123,6 +125,8 @@ exports.notes = (args, message, filestackClient) => {
   let wavBuffer = synth
     .midiToWav(fs.readFileSync(`${message.author.id}.mid`))
     .toBuffer(); // Create a WAV file buffer
+
+  message.channel.send("Generating clip..."); // Let the user know the bot is working on it
 
   // Upload the buffer to Filestack and send it to chat
   filestackClient.upload(wavBuffer).then(async (res) => {
